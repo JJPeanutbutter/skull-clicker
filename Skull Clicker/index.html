@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Cookie Clicker</h1>
+        <div id="cookie-container">
+            <img id="big-cookie" src="https://orteil.dashnet.org/cookieclicker/img/bigCookie.png" alt="Big Cookie">
+        </div>
+        <div id="stats">
+            <p>Cookies: <span id="cookie-count">0</span></p>
+            <p>Cookies per second: <span id="cps">0</span></p>
+        </div>
+        <div id="upgrades">
+            <h2>Upgrades</h2>
+            <div class="upgrade" id="cursor">
+                <p>Cursor - Cost: 15 cookies</p>
+                <button onclick="buyUpgrade('cursor')">Buy</button>
+            </div>
+            <div class="upgrade" id="grandma">
+                <p>Grandma - Cost: 100 cookies</p>
+                <button onclick="buyUpgrade('grandma')">Buy</button>
+            </div>
+            <div class="upgrade" id="bot">
+                <p>Bot - Cost: 5000 cookies</p>
+                <button onclick="buyUpgrade('bot')">Buy</button>
+            </div>
+            <!-- Add more upgrades as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
